@@ -1,0 +1,15 @@
+{
+    "appService.deploySubpath": "",
+    "appService.zipIgnorePattern": [
+        ".vscode{,/**}"
+    ],
+    "search.exclude": {
+        "**/coverge": true,
+        "**/dist": true,
+        "**/node_modules": true
+    },
+    "tslint.autoFixOnSave": true,
+    "tslint.exclude": "**/node_modules/**/*",
+    "tslint.ignoreDefinitionFiles": false,
+    "typescript.referencesCodeLens.enabled": true
+}

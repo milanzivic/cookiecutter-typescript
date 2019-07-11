@@ -1,0 +1,29 @@
+{
+    "name": "{{cookiecutter.name}}",
+    "version": "0.1.0",
+    "author": "{{cookiecutter.author}}",
+    "license": "{{cookiecutter.license}}",
+    "description": "TODO: write a description",
+    "repository": {
+        "type": "git",
+        "url": "{{cookiecutter.repository}}"
+    },
+    "scripts": {
+        "build": "tsc",
+        "test": "jest --forceExit --coverage --verbose",
+        "tslint": "tslint -c tslint.json -p tsconfig.json",
+        "watch-test": "npm run test -- --watchAll",
+        "watch": "tsc -w"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+        "@types/jest": "^24.0.15",
+        "@types/node": "^12.6.2",
+        "jest": "^24.8.0",
+        "ts-jest": "^24.0.2",
+        "ts-node": "^8.3.0",
+        "tslint": "^5.18.0",
+        "typescript": "^3.5.2"
+    }
+}
