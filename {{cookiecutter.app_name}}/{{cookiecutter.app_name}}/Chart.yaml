@@ -1,0 +1,12 @@
+apiVersion: v2
+name: {{cookiecutter.app_name}}
+description: A Helm chart for {{cookiecutter.app_name}}
+type: application
+version: 0.0.1
+appVersion: "0.0.1"
+dependencies:
+- alias: {{cookiecutter.app_name}}
+  name: default-endpoint
+  version: &version 1.27.3
+  repository: "oci://us-central1-docker.pkg.dev/pledge-dev-267910/dev-helm-repo"
+  condition: {{cookiecutter.app_name}}.enabled
